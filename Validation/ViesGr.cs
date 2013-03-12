@@ -46,8 +46,8 @@ namespace Multipetros.Validation{
                 /// <returns>true if the VIES VAT ID is valid, false if it's invalid</returns>
                 public static bool IsValid(int viesVatId){
                         
-                        // all GR VIES IDs has 9 digits and starts counting from 100000000
-                        if(viesVatId > 999999999 || viesVatId < 9999999) 
+                        // all GR VIES IDs has 9 digits and starts counting from 10000000
+                        if(viesVatId > 999999999 || viesVatId < 999999) 
                                 return false ; 
                         
                         //deploy the 9 digits of the number to a table,
